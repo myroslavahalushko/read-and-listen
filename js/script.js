@@ -33,7 +33,7 @@ const ElementOfTexts = ({numberOfCurrentPage}) => {
             <div className = "column3">
                 <img className = "l_image" src = {"images/text_img" + numberOfCurrentPage + ".png" }/>
                  <audio controls src = {"voices/text" + numberOfCurrentPage + ".mp3"} type="audio/music.mp3"></audio>
-                 <a href = "./../../projectG/index.html" className = "backButton">Повернутися на головну сторінку</a>
+                 <a href = "./../../read-and-listen/index.html" className = "backButton">Повернутися на головну сторінку</a>
             </div>
         </div>
     )
