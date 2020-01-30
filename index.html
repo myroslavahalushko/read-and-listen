@@ -9,6 +9,7 @@
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
+    <div id = "loader"></div>
     <div class = "header">
         <div class = "h_background">
           <div class=" h_window">
@@ -37,6 +38,28 @@
         </div>
       </div>
       <script>
-      </script>
+        let loader;
+        let loadNow = (opacity) => {
+            if(opacity <= 0) {
+                dispayContent();
+            }
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(() => {
+                    loadNow(opacity - 0.05);
+                }, 100);
+            }
+        }
+
+        let dispayContent = () => {
+            loader.style.display = 'none';
+            document.getElementById('root').style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        })
+    </script>
 </body>
 </html>
