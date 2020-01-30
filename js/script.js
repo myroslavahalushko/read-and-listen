@@ -1,5 +1,4 @@
      
-            
 const ElementOfTexts = ({numberOfCurrentPage}) => {
     let arrayOfAnswer = [...answer[numberOfCurrentPage - 1]];
     let arrayOfDictionary = [...dictionary[numberOfCurrentPage - 1]]; 
@@ -83,8 +82,12 @@ const App = () => {
 };
   
 
-    ReactDOM.render(
+    
+
+    window.onload = function() {
+        ReactDOM.render(
         <App />,
         document.getElementById('root')
     );
+      };
 
