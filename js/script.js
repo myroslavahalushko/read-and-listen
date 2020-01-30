@@ -1,8 +1,13 @@
      
             
 const ElementOfTexts = ({numberOfCurrentPage}) => {
+    let arrayOfAnswer = [...answer[numberOfCurrentPage - 1]];
+    let arrayOfDictionary = [...dictionary[numberOfCurrentPage - 1]]; 
+    let arrayOfWords = arrayOfDictionary.filter((element, index) => index % 2 == 0);
+    let arrayOfTranslete = arrayOfDictionary.filter((element, index) => index % 2 !== 0);
+    console.log(arrayOfWords);
     return ( 
-        <div className = "l_content">
+        <div className="l_content">
             <div className = "column1">
                 <div className = "l_title">
                     {textTitle[numberOfCurrentPage-1]}
@@ -12,13 +17,23 @@ const ElementOfTexts = ({numberOfCurrentPage}) => {
                 </div>
             </div>            
             <div className = "column2">
-            <div className = "l_dictionary">
-                    {dictionary[numberOfCurrentPage-1]}
+                <div className = "l_task">
+                    <b>{question[numberOfCurrentPage-1]}</b>                    
+                    <nav>
+                        {arrayOfAnswer.map((e) => <div>{e}</div>)}
+                    </nav>
+                </div>
+                <div className = "l_dictionary">
+                    <b>Dictionary</b>                    
+                    <nav>
+                        {arrayOfWords.map((e, index) => <div>{e + " - " + arrayOfTranslete[index]}</div>)}
+                    </nav>
                 </div>
             </div>
             <div className = "column3">
                 <img className = "l_image" src = {"images/text_img" + numberOfCurrentPage + ".png" }/>
                  <audio controls src = {"voices/text" + numberOfCurrentPage + ".mp3"} type="audio/music.mp3"></audio>
+                 <a href = "./../../projectG/index.html" className = "backButton">Повернутися на головну сторінку</a>
             </div>
         </div>
     )
@@ -67,8 +82,9 @@ const App = () => {
     );
 };
   
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
+
+    ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+    );
 

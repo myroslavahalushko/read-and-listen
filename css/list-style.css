@@ -4,22 +4,33 @@ body{
 
 .l_background{
     width: 100%;
-    height: 700px;
-    background: url(./images/background.jpg) no-repeat center top / cover;
+    min-height: 700px;
+    background: url(./../images/background.jpg) no-repeat center top / cover;
     padding-top: 50px;
     display: flex;
 }
 
 .l_window {
     background-color: white;
-    height: 90%;
+    height: auto;
     width: 90%;
     opacity: 0.8;
     margin: 0 auto;  
+    animation: appearance 1s;
 }
 
 .l_content {
     display: flex;
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
 }
 
 .column1 {
@@ -28,7 +39,7 @@ body{
 }
 
 .column2 {
-    width: 200px;
+    width: 300px;
     margin: 50px;
     padding-top: 40px;
 } 
@@ -53,8 +64,27 @@ body{
     padding-bottom: 40px;
 }
 
-.l_dictionary {
+.backButton{
+    width: 300px;
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+
+}
+
+.l_task{
     line-height: 25px;
+    margin-bottom: 20px;
+} 
+
+.l_dictionary{
+    line-height: 25px;
+}
+
+audio {
+    margin-bottom: 50px;
 }
 
 .pagginator{
@@ -62,11 +92,14 @@ body{
 }
 
 .button {
-    background-color: red;
     width: 50px;
     height: 650px;
     opacity: 0;
+    transition: 2s;
+    animation: appearance 1s;
 }
+
+
 
 
 

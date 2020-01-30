@@ -169,10 +169,54 @@ window['text'] = [`Advertising is a message that tries to sell something. Compan
             ];
 
             
-window['dictionary'] = ["Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising ",
-                    "Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising ", 
-                      "Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising  ",
-                        "Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising",
-                        "Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising Advertising - Advertising"
+window['question'] = ["Chose the correct answer:",
+                      "Fill in the gaps:", 
+                      "Transform the sentence into Passive Voice:", 
+                      "Mark the statement true or false:", 
+                      "Answer the question:",
+                      "Chose the synonim to word in gaps:", 
+                      "Complete the sentences:",
+                      "Put on the headines in correct order:", 
+                      "Match the dates with the events:",
+                      "Find out the connection between the star`s colour and it`s distance"
+                    ];
+
+window['answer'] = [ ["You can find advertisements in any place except:", 
+                      "a) on the radio", 
+                      "b) on TV",
+                      "c) in books",
+                      "a) in magazines"
+                      ],
+                      ["There are about (10000/15000) kinds of birds."],
+                      ["People write merry wishes on red paper and hang them all over the house."],
+                      ["They came in different size and had similar body shapes."],
+                      ["Can people make earthquekes happen."],
+                      ["Scientist can make electons `travel` from one atom to another",
+                       "a) go",
+                       "b) run",
+                       "c) "],
+                      ["Millions of people play golf the ..."],
+                      ["a) Isaak Newton`s discoveri",
+                       "b) Gravity is a force",
+                       "c) Mass and weight are not the same"],
+                      ["1953, 1908, 1939, 1962",
+                       " - Fleming was born",
+                       " - started working for the Foreign Office",
+                       " - his first appearance in Dr. No",
+                       " - his first novel Casino Royale Stars"],
+                      []  
 ]
+
+window['dictionary'] = [[ "Advertising", "Реклама;", "Companies", "Компанії;", "Certain", "Певний;", "Slogans", "Лозунги;", "Repetition", "Повторення;", "Headlines", "Заголовки;"],
+                      ["Feathers", "Пір’я;", "Earth", "Земля;", "Ostrich", "Страус;", "Dangerous", "Небезпечний;", "Hatch", "Bилуплюватися;", "Harsh", "Суровий;", "Whistle", "Свист;", "Migrate", "Мігрувати;"],
+                      [ "Вelieve", "Вірити;", "Depends ", "Залежить;", "Cycle ", "Цикл;", "Decorated", "Прикрашений;", "Firecrackers ", "Петарди;", "Glowing ", "Світиться;"],
+                      [ "Dinosaurs", "Динозаври;", "Ruled  ", "Правив;", "Geologic ", "Геологічний;", "Reptiles ", "Рептилії;", "Mesozoic", "Мезозой;", "Emerged", "Виникли;", "Ferns ", "Папороті;", "Mosses", "Мохи;"],
+                      [ "Earthquake", "Землетрус;", "Disasters", "Катастрофи;", "Stable ", "Стабільний;", "Surface  ", "Поверхня;", "Scientists ", "Вчені;", "Continents ", "Континенти;", "Man-made ", "Рукотворне;", "Seismologists ", "Сейсмологи;"],
+                      [ "Electricity", "Електрика;", "Protons ", "Протони;", "Neutrons", "Нейтрони;", "Electrons", "Електрони;", "Carbon", "Вуглець;", "Сonductor ", "Провідник;"],
+                      [ "Оutdoor", "Відкритий;", "Millions", "Мільйони;", "Tournaments", "Турніри;", "Shapes", "Форми;", "Holes", "Отвори;", "Grass", "Трава;", "Fairway", "Рівний луг;", "Bushes", "Кущі;", "Putter", "Ключка для гольфу"],
+                      [ "Gravity", "Гравітація;", "Force  ", "Сила;", "Ancient", "Стародавній;", "Astronomers", "Астрономи;", "Discovered ", "Виявлено;", "Space ", "Космос;"],
+                      [ "Novelist", "Новеліст;", "Popular", "Популярні;", "Wealthy", "Заможні;", "Fortune", "Фортуна;", "Journalist", "Журналіст;", "Spymasters", "Шпигун;"],
+                      [ "Stars", "Зірки;", "Fascinating", "Захоплююче;", "Gigantic", "Гігантські;", "Planets", "Планети;", "Universe ", "Всесвіт;", "Temperature", "Температура;", "Milky Way", "Чумацький шлях;", "Clusters", "Скупчення;"]  
+]
+
 
