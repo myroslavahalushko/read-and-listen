@@ -4,7 +4,6 @@ const ElementOfTexts = ({numberOfCurrentPage}) => {
     let arrayOfDictionary = [...dictionary[numberOfCurrentPage - 1]]; 
     let arrayOfWords = arrayOfDictionary.filter((element, index) => index % 2 == 0);
     let arrayOfTranslete = arrayOfDictionary.filter((element, index) => index % 2 !== 0);
-    console.log(arrayOfWords);
     return ( 
         <div className="l_content">
             <div className = "column1">
@@ -67,6 +66,10 @@ const ListOfTextConteiner = ({currentPage, setCurrentPage, pages, numberOfPages}
     )
 };
 
+const Preloader = () => {
+    return <div className = "loader"></div>
+}
+
   
 const App = () => {
     let pages = [];
@@ -80,14 +83,19 @@ const App = () => {
                              numberOfPages = {numberOfPages}/>
     );
 };
+
+class Load extends React.Component{
+    render(){
+        return(            
+            <React.Suspense fallback={<Preloader/>}>
+                <App />
+            </React.Suspense>
+        );
+    }
+}
   
-
-    
-
-    window.onload = function() {
         ReactDOM.render(
-        <App />,
+        <Load />,
         document.getElementById('root')
     );
-      };
 
