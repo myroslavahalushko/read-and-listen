@@ -4,7 +4,7 @@
     height: 100vh;
     z-index: 3;
     visibility: visible;
-    background: white url('./../126.gif') no-repeat center center;
+    background: white url('./preloader.gif') no-repeat center center;
     opacity: 1;
   }
   
