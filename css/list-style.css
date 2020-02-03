@@ -2,15 +2,6 @@ body{
     margin: 0;
 }
 
-.loader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    overflow: visible;
-    background: white no-repeat center center;
-}
-
 .l_background{
     width: 100%;
     min-height: 700px;
