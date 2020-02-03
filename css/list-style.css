@@ -8,7 +8,7 @@ body{
     height: 100vh;
     z-index: 1;
     overflow: visible;
-    background: white url('./../126.gif') no-repeat center center;
+    background: white no-repeat center center;
 }
 
 .l_background{
@@ -26,6 +26,7 @@ body{
     opacity: 0.8;
     margin: 0 auto;  
     animation: appearance 1s;
+    animation-delay: 1s;
 }
 
 .l_content {
@@ -102,10 +103,9 @@ audio {
 
 .button {
     width: 50px;
-    height: 650px;
+    height: auto ;
     opacity: 0;
     transition: 2s;
-    animation: appearance 1s;
 }
 
 

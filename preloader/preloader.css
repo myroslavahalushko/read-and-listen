@@ -1,0 +1,14 @@
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    visibility: visible;
+    background: white url('./../126.gif') no-repeat center center;
+    opacity: 1;
+  }
+  
+  .preloader.done{
+    opacity: 0;
+    visibility: hidden;
+  }

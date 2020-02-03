@@ -7,59 +7,34 @@
     <title>Texts</title>
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "preloader/preloader.css">
 </head>
 <body>
-    <div id = "loader"></div>
+    <div id = "page-preloader" class = "preloader"></div>
     <div class = "header">
         <div class = "h_background">
           <div class=" h_window">
             <div class="h_content">
-                <h1 class = "h_title">Lorem ipsum dolor sit amet</h1>
-                <p class="h_welcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <a href = "list.html" class = "h_button">List of Test</a>
+                <h1 class = "h_title">Використання ІКТ при роботі з текстом</h1>
+                <p class="h_welcome"> 
+                    Навчальний програмний засіб був створений на конкурс "Ярмарка педагогічних ідей"  вчителем вищої категорії  
+                    Сварицевицького навчально-виховного комплексу «Загальноосвітня школа І-ІІІ ступенів – 
+                    дошкільний навчальний заклад» </br>  Галушко Мирославою Сергіївною.</p>
+                <a href = "list.html" class = "h_button">Зразки текстів</a>
             </div>
           </div>
         </div>        
         <div class = "h_info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h2>Інструкція до програмного продукту</h2>
+            <p>Для того, щоб розпочати роботу власне з текстами, натисніть кнопку у віконечку вище. Можливо, доведеться зачекати кілька секунд,
+                і в наступному віконечку ви побачите панель для роботи з текстами.  </br> Тут розміщений сам текст, завдання до нього, 
+                словничок незнайомих слів, тематичний малюнок і програвач аудіотексту. Нижче знаходиться кнопка, яка поверне вас на головну сторінку.  </br>
+                Натиснувши першу трикутну кнопку, ви почнете роботу програвача, щоб зупинити звук потрібно натиснути туди ж само. Також на програвачі можна вимкнути звук і 
+                завантажити даний аудіофайл.  </br> Для навігації між текстами необхідно натиснути мишкою, за віконцем з правої або лівої сторони, відповідно вперед і назад по списку текстів.  </br>
+                Всього даний продукт містить 10 текстів на різні теми, відповідно 10 завдань різних типів і близько 70 слів з перекладом. 
+            </p>
         </div>
       </div>
-      <script>
-        let loader;
-        let loadNow = (opacity) => {
-            if(opacity <= 0) {
-                dispayContent();
-            }
-            else {
-                loader.style.opacity = opacity;
-                window.setTimeout(() => {
-                    loadNow(opacity - 0.05);
-                }, 100);
-            }
-        }
-
-        let dispayContent = () => {
-            loader.style.display = 'none';
-            document.getElementById('root').style.display = 'block';
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            loader = document.getElementById('loader');
-            loadNow(1);
-        })
-    </script>
+      <script src = "preloader/preloader.js"></script>
 </body>
 </html>

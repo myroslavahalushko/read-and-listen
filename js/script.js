@@ -67,7 +67,7 @@ const ListOfTextConteiner = ({currentPage, setCurrentPage, pages, numberOfPages}
 };
 
 const Preloader = () => {
-    return <div className = "loader"></div>
+    return <div src = "126.gif" className = "loader"></div>
 }
 
   
